@@ -1,0 +1,59 @@
+\documentclass{article}
+
+%% Title
+%% ----------------------------------------------------------------------------
+
+% 标题信息的设置。并不会真正生成标题
+\title{\LaTeX\ 使用简例}
+\author{Jy}
+\date{\today}
+
+%% Links
+%% ----------------------------------------------------------------------------
+
+\usepackage{url}
+
+%% Fonts
+%% ----------------------------------------------------------------------------
+
+%% English fonts
+\usepackage[no-math]{fontspec}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+% \setsansfont[Mapping=tex-text]{Calibri}
+% \setmonofont{Courier New}
+%% Chinese, needs fontspec
+\usepackage[CJKchecksingle]{xeCJK}
+\usepackage{CJKnumb}
+	\setCJKmainfont[
+        BoldFont   = {KaiTi},
+        ItalicFont = {FangSong}]
+        {Microsoft YaHei}
+	\setCJKsansfont{}
+	\setCJKmonofont{Microsoft YaHei}
+	\punctstyle{hangmobanjiao}
+
+%% Document
+%% ----------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % 加上这句话才会生成标题
+
+\section{基本规则}
+
+姊姊好！
+行文的基本规则和 Markdown 其实差不太多：
+一段话内容由若干行连续的文字组成。
+两段话之间由至少一个空行分隔开来。
+注意你在源文件（\path{xxx.tex}）
+里加入多少个空行都会被当成一个空行来对待，
+这一点对于空格来说也是一样的。
+使用 \LaTeX\ 时建议先不要管排版，
+所以不要想着要在最后的文档中哪里插入空行或者空格。
+你只要专注于你想要写的「内容」上，
+而不用担心「格式」上的问题。
+
+看。这就是第二个自然段了。
+
+\end{document}
+
