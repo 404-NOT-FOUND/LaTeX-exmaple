@@ -75,9 +75,9 @@
 \usepackage{CJKnumb}
 	\setCJKmainfont[
         BoldFont   = {Microsoft YaHei},
-        ItalicFont = {KaiTi}]
+        ItalicFont = {SimSun}]
         {FangSong}
-	\setCJKmonofont{Microsoft YaHei}
+	\setCJKmonofont{KaiTi}
 	\punctstyle{hangmobanjiao}
 
 %% Coding
@@ -85,8 +85,21 @@
 
 \usepackage{listings}
 \lstset{%
-    basicstyle=\ttfamily
+    basicstyle=\ttfamily,
+    frame=L,
 }
+
+%% Spacing
+%% ----------------------------------------------------------------------------
+
+% space of caption and the context;
+    \setlength{\belowcaptionskip}{3pt}
+
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{2em}
+\addtolength{\parskip}{3pt}
+\usepackage{indentfirst}
 
 %% Math
 %% ----------------------------------------------------------------------------
