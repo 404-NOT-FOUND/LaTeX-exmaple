@@ -1,0 +1,111 @@
+
+% 这个文件定义了一些版式风格、以及一些命令。
+% 你并不需要阅读这些内容。
+
+\documentclass{article}
+
+%% Lists
+%% ----------------------------------------------------------------------------
+
+\usepackage{paralist}
+\renewenvironment{itemize}{%
+    \begin{compactitem}
+}{%
+    \end{compactitem}
+}
+\renewenvironment{enumerate}{%
+    \begin{compactenum}
+}{%
+    \end{compactenum}
+}
+\renewenvironment{description}{%
+    \begin{compactdesc}
+}{%
+    \end{compactdesc}
+}
+
+%% Colors
+%% ----------------------------------------------------------------------------
+
+\usepackage{xcolor}
+\definecolor{lightblue}{RGB}{39, 104, 192}
+
+%% Links
+%% ----------------------------------------------------------------------------
+
+\usepackage[
+    bookmarksnumbered,
+    pdfencoding=auto,
+    pdfborder=1,
+    breaklinks,
+    colorlinks, linkcolor=lightblue, urlcolor=blue
+]{hyperref}
+\hypersetup{
+    pdfmenubar=true,
+    citecolor=green,
+    filecolor=magenta,
+}
+\usepackage{url}
+
+\usepackage[
+    nameinlink,
+    noabbrev,
+]{cleveref}
+
+%% Tables
+%% ----------------------------------------------------------------------------
+
+\usepackage{booktabs}
+\newcommand*\botrule{\bottomrule}
+
+%% Fonts
+%% ----------------------------------------------------------------------------
+
+%% English fonts
+\usepackage[no-math]{fontspec}
+% \setmainfont[Mapping=tex-text]{Times New Roman}
+% \setsansfont[Mapping=tex-text]{Calibri}
+% \setmonofont{Courier New}
+%% Chinese, needs fontspec
+\usepackage[CJKchecksingle]{xeCJK}
+\usepackage{CJKnumb}
+	\setCJKmainfont[
+        BoldFont   = {Microsoft YaHei},
+        ItalicFont = {SimSun}]
+        {FangSong}
+	\setCJKmonofont{KaiTi}
+	\punctstyle{hangmobanjiao}
+
+%% Coding
+%% ----------------------------------------------------------------------------
+
+\usepackage{listings}
+\lstset{%
+    basicstyle=\ttfamily,
+    frame=L,
+}
+
+%% Spacing
+%% ----------------------------------------------------------------------------
+
+% space of caption and the context;
+    \setlength{\belowcaptionskip}{3pt}
+
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{2em}
+\addtolength{\parskip}{3pt}
+\usepackage{indentfirst}
+
+%% Math
+%% ----------------------------------------------------------------------------
+
+\usepackage{amsmath, amssymb}
+
+%% Markup
+%% ----------------------------------------------------------------------------
+
+\def\code{\lstinline}
+\newcommand*\propername[1]{\textit{#1}}
+\newcommand*\propernameZH[1]{《#1》}
+

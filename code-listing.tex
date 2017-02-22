@@ -1,0 +1,31 @@
+
+\section{代码陈列}
+
+代码可以直接写在文档里面，
+也可以从一个文件中截取。
+下面是直接写在文档中的代码：
+\begin{lstlisting}[language=python]
+print('hello world')
+\end{lstlisting}
+这是 \path{code/hello.py} 中的内容：
+\lstinputlisting[language=python]{code/hello.py}
+下面我们截取其中的第二到三行：
+\lstinputlisting[language=python, firstline=2, lastline=3]{code/hello.py}
+
+注意直接写在文档中的代码前面不要留有空格，
+否则空格会被保留。
+比如
+「这样写」
+和
+                                    「这样写」
+在生成的 PDF 中是一样的；
+但
+\begin{lstlisting}[language=python]
+print('hello world')
+\end{lstlisting}
+和
+    \begin{lstlisting}[language=python]
+    print('hello world')
+    \end{lstlisting}
+则是不一样的（代码部分空格会被保留）。
+

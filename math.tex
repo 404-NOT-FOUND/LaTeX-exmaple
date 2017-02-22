@@ -1,0 +1,64 @@
+
+\section{数学公式}
+
+数学公式呢，
+其实和上次是一样的
+（因为上次就是在用 \LaTeX\ 来编译的数学公式啦）。
+再复习一下：
+行间的数学内容用一对美元符号（\code`$`）来包围，
+比如 $e^{i\pi} + 1 = 0$。
+大块的或重要的数学内容单独展示，
+此时可以使用基本的 \code`\[` 和 \code`\]` 来包围：
+\[
+    \log_{10} 10 = 1
+\]
+或更复杂的 \code `multiline` 来展示多行公式：
+\begin{multline*}
+    x = 4 \times \Bigl( y \cdot z + \frac{1}{2} c \Bigr) \\
+      = 4 y \cdot z + \frac{4}{2} c \\
+      = 4 y \cdot z + 2 c \\
+      = 4 \times 2^{12} \times 2^{-10} + 2 \times \lg 100 \\
+      = 4 \times 2^2 + 2 \times 2 \\
+      = 4 \times 16 + 4 \\
+      = 64 + 4 \\
+      = 68
+\end{multline*}
+如果你有强迫症、需要将等号对齐，
+可以这样写：
+\[
+    \begin{split}
+        x &= 4 \times \Bigl( y \cdot z + \frac{1}{2} c \Bigr) \\
+          &= 4 y \cdot z + \frac{4}{2} c \\
+          &= 4 y \cdot z + 2 c \\
+          &= 4 \times 2^{12} \times 2^{-10} + 2 \times \lg 100 \\
+          &= 4 \times 2^2 + 2 \times 2 \\
+          &= 4 \times 16 + 4 \\
+          &= 64 + 4 \\
+          &= 68
+    \end{split}
+\]
+
+关于括号的大小：
+推荐手动选择合适大小的括号。
+括号的尺寸小（正常）到大分别为
+\begin{itemize}
+\item
+    不加括号、
+\item
+    \code`\bigl` 和 \code`\bigr`、
+\item
+    \code`\Bigl` 和 \code`\Bigr`、
+\item
+    \code`\biggl` 和 \code`\biggr`、
+    以及
+\item
+    \code`\Biggl` 和 \code`\Biggr`。
+\end{itemize}
+这些括号的效果如下：
+\[
+    \Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)
+\]
+
+如果你有什么数学符号不知道该怎么打，
+可以参考\href{http://web.mit.edu/rsi/www/pdfs/math-symbols.pdf}{这份资料}。
+
