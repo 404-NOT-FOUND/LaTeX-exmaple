@@ -67,12 +67,18 @@
 \lstset{%
     basicstyle=\ttfamily
 }
-\def\code{\lstinline}
 
 %% Math
 %% ----------------------------------------------------------------------------
 
 \usepackage{amsmath, amssymb}
+
+%% Markup
+%% ----------------------------------------------------------------------------
+
+\def\code{\lstinline}
+\newcommand*\propername[1]{\textit{#1}}
+\newcommand*\propernameZH[1]{《#1》}
 
 %% Document
 %% ----------------------------------------------------------------------------
@@ -98,6 +104,23 @@
 
 看。这就是第二个自然段了。
 
+一些常用的 ``Markup'' 包括%
+    \emph{强调}的内容，
+    行间\code`代码`，
+    以及
+    \propernameZH{书名}或\propername{A Book's Name}。
+
+你可以像编程时一样在文档中使用「注释」：
+在 \LaTeX\ 中，
+我们用一个百分号（\code`%`）作为行注释符。
+比如
+% 这是一个注释
+这里的源代码实际上是：
+\begin{lstlisting}[language={[LaTeX]TeX}]
+比如
+% 这是一个注释
+这里的源代码实际上是：
+\end{lstlisting}
 
 \section{列表}
 
