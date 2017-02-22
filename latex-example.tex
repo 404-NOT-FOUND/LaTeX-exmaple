@@ -25,9 +25,9 @@
 \usepackage[CJKchecksingle]{xeCJK}
 \usepackage{CJKnumb}
 	\setCJKmainfont[
-        BoldFont   = {KaiTi},
-        ItalicFont = {FangSong}]
-        {Microsoft YaHei}
+        BoldFont   = {Microsoft YaHei},
+        ItalicFont = {KaiTi}]
+        {FangSong}
 	\setCJKsansfont{}
 	\setCJKmonofont{Microsoft YaHei}
 	\punctstyle{hangmobanjiao}
@@ -38,6 +38,7 @@
 \begin{document}
 
 \maketitle % 加上这句话才会生成标题
+
 
 \section{基本规则}
 
@@ -54,6 +55,38 @@
 而不用担心「格式」上的问题。
 
 看。这就是第二个自然段了。
+
+
+\section{列表}
+
+下面是几种列表（list）的使用。
+一个没有标序号的列表叫「无序列表（unordered list）」：
+\begin{itemize}
+\item 
+    苹果
+\item 
+    梨
+\item 
+    香蕉
+\end{itemize}
+一个标有序号的列表则叫「有序列表（ordered list）」：
+\begin{enumerate}
+\item 
+    苹果
+\item 
+    梨
+\item 
+    香蕉
+\end{enumerate}
+还有一种列表叫描述列表「（description list）」：
+\begin{description}
+\item[苹果]
+    红色
+\item[梨]
+    浅黄色
+\item[香蕉]
+    黄色
+\end{description}
 
 \end{document}
 
