@@ -7,4 +7,4 @@
 
 ## 编译
 
-你可以下载并安装 [MiKTeX][https://miktex.org/] 到电脑上来编译它，也可以在 [ShareLaTeX][https://www.sharelatex.com] 上注册一个免费账号来在线编译。
+你可以下载并安装 [MiKTeX](https://miktex.org/) 到电脑上来编译它，也可以在 [ShareLaTeX](https://www.sharelatex.com) 上注册一个免费账号来在线编译。
